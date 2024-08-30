@@ -1,17 +1,25 @@
 .navbar {
   background: linear-gradient(to bottom, #ffffff, #d3d3d3);   
-  box-shadow: 0 2px 4px rgb(0, 0, 0);   
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);  /* Añadí opacidad para suavizar la sombra */
   padding: 10px 20px;
-} 
+  z-index: 1000;  /* Asegura que la navbar esté por encima de otros elementos */
+}
+
 body {
   background-image: url('https://c.wallhere.com/photos/3f/60/1500x930_px_abstract_images_anime_photos_art_photos_autumn_wallpapers_cartoons_comic_characters_drawings-800175.jpg!d');
   background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-attachment: fixed; /* Mantiene la imagen fija cuando se desplaza la página */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
+
 h1 {
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Mejora la visibilidad del texto en fondos claros */
 }
+
 .social-icon i {
   font-size: 24px; 
 }
